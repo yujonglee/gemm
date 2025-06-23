@@ -26,7 +26,7 @@ gemm-c64 = { version = "0.18.2", path = "../gemm-c64", default-features = false 
 gemm-f16 = { version = "0.18.2", path = "../gemm-f16", default-features = false, optional = true }
 
 [features]
-default = ["std", "rayon", "f16"]
+default = ["std", "rayon"]
 f16 = ["gemm-f16", "gemm-common/f16"]
 std = [
   "dyn-stack/std",

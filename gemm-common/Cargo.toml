@@ -27,7 +27,7 @@ libm = "0.2.11"
 sysctl = { workspace = true, optional = true }
 
 [features]
-default = ["std", "rayon", "f16"]
+default = ["std", "rayon"]
 std = ["pulp/std", "dyn-stack/std", "once_cell/std", "sysctl"]
 nightly = ["pulp/nightly"]
 wasm-simd128-enable = []
